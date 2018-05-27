@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "617842580476",
+    "firebase_url": "https://condmanager-582b7.firebaseio.com",
+    "project_id": "condmanager-582b7",
+    "storage_bucket": "condmanager-582b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617842580476:android:f9f06293d9972aac",
+        "android_client_info": {
+          "package_name": "br.com.avantitecnologiati.condmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617842580476-85chjc43mdd38f7ckf3jifn00qd0h7gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.avantitecnologiati.condmanager",
+            "certificate_hash": "da6b5071956c3a3793099e1f8061c391baea2569"
+          }
+        },
+        {
+          "client_id": "617842580476-fskvb5fadrve0id4mnr6ih4ume9cggrg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "617842580476-fskvb5fadrve0id4mnr6ih4ume9cggrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc7hSv4JOAZtbqAtu6ZO7MvDOcldY0_3Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617842580476-fskvb5fadrve0id4mnr6ih4ume9cggrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
