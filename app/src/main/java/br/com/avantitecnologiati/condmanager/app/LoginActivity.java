@@ -1,7 +1,9 @@
 package br.com.avantitecnologiati.condmanager.app;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import br.com.avantitecnologiati.condmanager.R;
 
 public class LoginActivity extends AppCompatActivity {
 

@@ -1,40 +1,36 @@
 package br.com.avantitecnologiati.condmanager.model;
 
-public class Pessoa {
+public abstract class Pessoa{
+    private String uid;
     private String nome;
     private String cpf;
-    private int telefone;
-    private String rg;
+    private String telefone;
+
+    public Pessoa(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+
+    public String getUid() {
+        return uid;
+    }
 
     public String getNome() {
         return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
-    public String getRg() {
-        return rg;
-    }
 
-    public void setRg(String rg) {
-        this.rg = rg;
-    }
 }
