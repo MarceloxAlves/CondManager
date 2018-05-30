@@ -1,29 +1,14 @@
 package br.com.avantitecnologiati.condmanager.model;
 
-import java.util.Date;
-
 public class Despesa {
     private String idDespesa;
     private String descricao;
     private double valor;
-    private Date dataDeVencimento;
-    private String tipoDespesa;
-    private Divida statusDaDespesa;
+    private int tipoDespesa;
 
-    public String getTipoDespesa() {
-        return tipoDespesa;
-    }
-
-    public void setTipoDespesa(String tipoDespesa) {
-        this.tipoDespesa = tipoDespesa;
-    }
-
-    public Despesa(String idDespesa, String descricao, double valor, Date dataDeVencimento, Divida statusDaDespesa) {
-        this.idDespesa = idDespesa;
+    public Despesa(String descricao, double valor) {
         this.descricao = descricao;
         this.valor = valor;
-        this.dataDeVencimento = dataDeVencimento;
-        this.statusDaDespesa = statusDaDespesa;
     }
 
     public String getIdDespesa() {
@@ -32,6 +17,15 @@ public class Despesa {
 
     public void setIdDespesa(String idDespesa) {
         this.idDespesa = idDespesa;
+    }
+
+
+    public int getTipoDespesa() {
+        return tipoDespesa;
+    }
+
+    public void setTipoDespesa(int tipoDespesa) {
+        this.tipoDespesa = tipoDespesa;
     }
 
     public String getDescricao() {
@@ -50,19 +44,8 @@ public class Despesa {
         this.valor = valor;
     }
 
-    public Date getDataDeVencimento() {
-        return dataDeVencimento;
+    public boolean getRateada(){
+        return this.tipoDespesa == TipoDespesa.FIXA.getValue();
     }
 
-    public void setDataDeVencimento(Date dataDeVencimento) {
-        this.dataDeVencimento = dataDeVencimento;
-    }
-
-    public Divida getStatusDaDespesa() {
-        return statusDaDespesa;
-    }
-
-    public void setStatusDaDespesa(Divida statusDaDespesa) {
-        this.statusDaDespesa = statusDaDespesa;
-    }
 }

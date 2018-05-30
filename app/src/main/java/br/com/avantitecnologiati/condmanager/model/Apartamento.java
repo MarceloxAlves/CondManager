@@ -1,5 +1,7 @@
 package br.com.avantitecnologiati.condmanager.model;
 
+import java.util.List;
+
 public class Apartamento {
     private int numero;
     private int quantQuartos;
@@ -45,14 +47,8 @@ public class Apartamento {
         this.proprietario = proprietario;
     }
 
-    public double totalizarDespesas(Despesa despesa, Apartamento ap, Condominio condominio){
-        double valor;
-
-        if(despesa.getTipoDespesa().equals("fixa")){
-            valor = despesa.getValor() / condominio.getQuantQuartosCond();
-        }
-        else
-            valor = despesa.getValor();
+    public double getValorCondominio(){
+        double valor = 0;
 
         return valor;
 
