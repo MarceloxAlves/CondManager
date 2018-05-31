@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".app.ListarApartamentosActivity"
-    android:background="@drawable/predios">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    tools:context=".app.ListarApartamentosActivity">
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_apartamentos"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </android.support.v7.widget.RecyclerView>
 
     <android.support.design.widget.FloatingActionButton
@@ -20,8 +20,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        app:layout_anchor="@id/rv_apartamentos"
-        android:onClick="novoApartamento"/>
-
-
-</android.support.design.widget.CoordinatorLayout>
+        android:onClick="novoApartamento"
+        android:src="@mipmap/icon_add" />
+</FrameLayout>
