@@ -11,4 +11,10 @@
     <string name="cadastrar">Cadastrar</string>
     <string name="apartamentos">Apartamentos</string>
     <string name="dispesas">Dispesas</string>
+    <string name="propietario">Propietario</string>
+    <string name="vazio">vazio</string>
+    <string name="inquilino">inquilino</string>
+    <string name="n_do_apartamento">N° do apartamento</string>
+    <string name="n_de_quartos">N° de quartos</string>
+    <string name="salvar">Salvar</string>
 </resources>
