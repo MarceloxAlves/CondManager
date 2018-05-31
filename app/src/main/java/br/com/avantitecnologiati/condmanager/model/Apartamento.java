@@ -1,10 +1,13 @@
 package br.com.avantitecnologiati.condmanager.model;
 
+import java.util.List;
+
 public class Apartamento {
     private int numero;
     private int quantQuartos;
     private Ocupacao tipoOcupacao;
     private Proprietario proprietario;
+    private List<FaturaCondominio> faturaCondominios;
 
     public Apartamento(int numero, int quantQuartos, Ocupacao tipoOcupacao, Proprietario proprietario) {
         this.numero = numero;
@@ -45,19 +48,13 @@ public class Apartamento {
         this.proprietario = proprietario;
     }
 
-    public double totalizarDespesas(Despesa despesa, Apartamento ap, Condominio condominio){
-        double valor;
-
-        if(despesa.getTipoDespesa().equals("fixa")){
-            valor = despesa.getValor() / condominio.getQuantQuartosCond();
-        }
-        else
-            valor = despesa.getValor();
-
-        return valor;
-
+    public void adicionarFaturaCondominio(FaturaCondominio faturaCondominio){
+        if (FaturaCondominio.validarReferencia(this,faturaCondominio.getReferencia()))
+             this.faturaCondominios.add(faturaCondominio);
     }
 
 
-
+    public List<FaturaCondominio> getFaturas() {
+            return  this.faturaCondominios;
+    }
 }

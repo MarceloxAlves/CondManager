@@ -1,49 +1,62 @@
 package br.com.avantitecnologiati.condmanager.model;
-
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class Condominio {
     private int idCond;
     private String nomeCond;
     private List<Apartamento> apartamentos;
-    private int qtddAp = 0;
 
-    public Condominio(int idCond, String nomeCond, List<Apartamento> apartamentos, int qtddAp) {
-        this.idCond = idCond;
+    public Condominio(String nomeCond) {
         this.nomeCond = nomeCond;
-        this.apartamentos = apartamentos;
-        this.qtddAp = qtddAp;
+        this.apartamentos = new ArrayList<>();
     }
 
     public int getIdCond() {
         return idCond;
     }
 
-    public void setIdCond(int idCond) {
-        this.idCond = idCond;
-    }
-
     public String getNomeCond() {
         return nomeCond;
+    }
+
+    public void setIdCond(int idCond) {
+        this.idCond = idCond;
     }
 
     public void setNomeCond(String nomeCond) {
         this.nomeCond = nomeCond;
     }
 
+
     public List<Apartamento> getApartamentos() {
         return apartamentos;
     }
 
-    public void setApartamentos(List<Apartamento> apartamentos) {
-        this.apartamentos = apartamentos;
+    public void adicionarApartamento(Apartamento apartamento) {
+        this.apartamentos.add(apartamento);
     }
 
-    public int getQtddAp() {
-        return qtddAp;
+
+    public int quantidadeQuartos(){
+        int totalQuartos = 0;
+        for (Apartamento apartamento:  getApartamentos()) {
+            totalQuartos += apartamento.getQuantQuartos();
+        }
+        return totalQuartos;
     }
 
-    public void setQtddAp(int qtddAp) {
-        this.qtddAp = qtddAp;
+
+    public boolean gerarFaturamentoDoCondominio(String referencia, List<ItemDespesa> itemDespesas){
+        for (Apartamento apartamento : this.getApartamentos()) {
+            FaturaCondominio faturaCondominio = new FaturaCondominio(apartamento, referencia);
+            for (ItemDespesa inItemDespesa: itemDespesas){
+
+            }
+        }
+        return true;
     }
+
+
 }
