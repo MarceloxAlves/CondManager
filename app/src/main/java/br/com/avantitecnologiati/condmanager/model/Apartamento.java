@@ -7,7 +7,6 @@ public class Apartamento {
     private int quantQuartos;
     private Ocupacao tipoOcupacao;
     private Proprietario proprietario;
-    private List<FaturaCondominio> faturaCondominios;
 
     public Apartamento(int numero, int quantQuartos, Ocupacao tipoOcupacao, Proprietario proprietario) {
         this.numero = numero;
@@ -48,13 +47,13 @@ public class Apartamento {
         this.proprietario = proprietario;
     }
 
-    public void adicionarFaturaCondominio(FaturaCondominio faturaCondominio){
-        if (FaturaCondominio.validarReferencia(this,faturaCondominio.getReferencia()))
-             this.faturaCondominios.add(faturaCondominio);
+    public double getValorCondominio(){
+        double valor = 0;
+
+        return valor;
+
     }
 
 
-    public List<FaturaCondominio> getFaturas() {
-            return  this.faturaCondominios;
-    }
+
 }

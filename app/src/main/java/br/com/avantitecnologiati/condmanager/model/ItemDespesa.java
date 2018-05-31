@@ -29,6 +29,4 @@ public class ItemDespesa {
     public Apartamento getApartamento() {
         return apartamento;
     }
-
-
 }

@@ -1,6 +1,5 @@
 package br.com.avantitecnologiati.condmanager.model;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class Condominio {
@@ -48,14 +47,9 @@ public class Condominio {
     }
 
 
-    public boolean gerarFaturamentoDoCondominio(String referencia, List<ItemDespesa> itemDespesas){
-        for (Apartamento apartamento : this.getApartamentos()) {
-            FaturaCondominio faturaCondominio = new FaturaCondominio(apartamento, referencia);
-            for (ItemDespesa inItemDespesa: itemDespesas){
 
-            }
-        }
-        return true;
+    public void adicionarDespesaApartamento(){
+
     }
 
 

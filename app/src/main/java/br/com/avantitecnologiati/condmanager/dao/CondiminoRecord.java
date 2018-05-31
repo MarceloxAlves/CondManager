@@ -7,30 +7,29 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.avantitecnologiati.condmanager.Pessoa;
+import br.com.avantitecnologiati.condmanager.model.Condominio;
+import br.com.avantitecnologiati.condmanager.model.Pessoa;
 
-public class Record {
+public class CondiminoRecord {
 
     private Database database;
-    private Registravel registravel;
 
-    public Record(Database database, Registravel registravel) {
+    public CondiminoRecord(Database database) {
         this.database = database;
-        this.registravel = registravel;
     }
 
     public void adicionar(){
 
     }
 
-    public List<Registravel> listar(){
-        final List<Registravel> registros = new ArrayList<>();
-        database.getDatabaseReference().child(registravel.getTag()).addValueEventListener(new ValueEventListener() {
+    public List<Condominio> listar(){
+        final List<Condominio> registros = new ArrayList<>();
+        database.getDatabaseReference().child("Condominio").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot ) {
                 for (DataSnapshot objSnapshot: dataSnapshot.getChildren()) {
-                    Registravel registravel = objSnapshot.getValue(Registravel.class);
-                    registros.add(registravel);
+                    Condominio condominio = objSnapshot.getValue(Condominio.class);
+                    registros.add(condominio);
                 }
             }
 
