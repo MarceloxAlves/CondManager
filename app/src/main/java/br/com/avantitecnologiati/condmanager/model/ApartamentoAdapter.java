@@ -9,6 +9,8 @@ import android.widget.EditText;
 
 import java.util.List;
 
+import br.com.avantitecnologiati.condmanager.R;
+
 public class ApartamentoAdapter extends RecyclerView.Adapter<ApartamentoAdapter.ApartamentoViewHolder> {
 
     private Context context;

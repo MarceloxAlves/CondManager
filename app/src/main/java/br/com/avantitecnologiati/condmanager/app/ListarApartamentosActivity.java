@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import br.com.avantitecnologiati.condmanager.R;
+
 public class ListarApartamentosActivity extends AppCompatActivity {
 
     @Override
