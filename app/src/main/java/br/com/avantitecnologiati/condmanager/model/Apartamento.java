@@ -5,7 +5,7 @@ import java.util.List;
 public class Apartamento {
     private int numero;
     private int quantQuartos;
-    private Ocupacao tipoOcupacao;
+    private int tipoOcupacao;
     private Proprietario proprietario;
 
 
@@ -16,7 +16,7 @@ public class Apartamento {
     public Apartamento(int numero, int quantQuartos, Ocupacao tipoOcupacao, Proprietario proprietario) {
         this.numero = numero;
         this.quantQuartos = quantQuartos;
-        this.tipoOcupacao = tipoOcupacao;
+        this.tipoOcupacao = tipoOcupacao.getTipoOcupacao();
         this.proprietario = proprietario;
     }
 
@@ -36,11 +36,11 @@ public class Apartamento {
         this.quantQuartos = quantQuartos;
     }
 
-    public Ocupacao getTipoOcupacao() {
+    public int getTipoOcupacao() {
         return tipoOcupacao;
     }
 
-    public void setTipoOcupacao(Ocupacao tipoOcupacao) {
+    public void setTipoOcupacao(int tipoOcupacao) {
         this.tipoOcupacao = tipoOcupacao;
     }
 

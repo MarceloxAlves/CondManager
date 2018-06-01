@@ -27,15 +27,16 @@ public class ListarApartamentosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_listar_apartamentos);
         recyclerView = findViewById(R.id.rv_apartamentos);
         apartamentoRecord = new ApartamentoRecord(new Database(this));
+        apartamentoAdapter = new ApartamentoAdapter(this,apartamentoRecord.listar());
+
     }
 
     @Override
     protected void onResume() {
-        apartamentoAdapter = new ApartamentoAdapter(this,apartamentoRecord.listar());
+        super.onResume();
         recyclerView.setAdapter(apartamentoAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
-        super.onResume();
     }
 
     public void novoApartamento(View view) {

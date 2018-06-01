@@ -1,5 +1,6 @@
 package br.com.avantitecnologiati.condmanager.app;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,9 +40,11 @@ public class AdicionarApartamentoActivity extends AppCompatActivity {
         Apartamento apartamento = new Apartamento();
         apartamento.setNumero(Integer.valueOf(ValidateTextView.validate(txtNumero)));
         apartamento.setQuantQuartos(Integer.valueOf(ValidateTextView.validate(txtQtQuartos)));
-        apartamento.setTipoOcupacao(Ocupacao.PROPIETARIO);
+        apartamento.setTipoOcupacao(Ocupacao.PROPIETARIO.getTipoOcupacao());
         apartamentoRecord.adicionar(apartamento);
         Toast.makeText(this, "Apartamento adicionado com Sucesso!", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this,ListarApartamentosActivity.class));
+        finish();
 
     }
 }
