@@ -8,23 +8,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.avantitecnologiati.condmanager.model.Condominio;
-import br.com.avantitecnologiati.condmanager.model.Pessoa;
+import br.com.avantitecnologiati.condmanager.model.Sindico;
 
-public class CondiminoRecord {
+public class CondiminoRecord extends Record {
 
-    private Database database;
 
     public CondiminoRecord(Database database) {
-        this.database = database;
+        super(database);
     }
 
-    public void adicionar(){
-
-    }
 
     public List<Condominio> listar(){
         final List<Condominio> registros = new ArrayList<>();
-        database.getDatabaseReference().child("Condominio").addValueEventListener(new ValueEventListener() {
+        getDatabase().getDatabaseReference().child("Condominio").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot ) {
                 for (DataSnapshot objSnapshot: dataSnapshot.getChildren()) {
@@ -41,5 +37,6 @@ public class CondiminoRecord {
 
         return registros;
     }
+
 
 }
