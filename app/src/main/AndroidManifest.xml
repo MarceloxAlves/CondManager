@@ -32,6 +32,9 @@
         <activity
             android:name=".app.AdicionarApartamentoActivity"
             android:parentActivityName=".app.ListarApartamentosActivity" />
+        <activity
+            android:name=".app.ListarProprietariosActivity"
+            android:parentActivityName=".app.PrincipalActivity" />
         <activity android:name=".app.ApartamentoDetalheActivity"></activity>
     </application>
 

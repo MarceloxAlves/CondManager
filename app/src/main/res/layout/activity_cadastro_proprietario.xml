@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_layout"
+    tools:context=".app.CadastroActivity">
+
+
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name" />
+    <EditText
+        android:id="@+id/edit_cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/cpf" />
+    <EditText
+        android:id="@+id/edit_telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/telefone" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cardCadastro"
+        android:layout_below="@id/cardCadastro"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/login_background"
+        android:onClick="cadastrar"
+        android:text="@string/cadastrar" />
+
+
+</LinearLayout>

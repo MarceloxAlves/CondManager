@@ -51,7 +51,7 @@
                     android:layout_weight="1"
                     android:paddingHorizontal="25dp"
                     android:background="@drawable/button_background2"
-                    android:text="@string/dispesas"
+                    android:text="@string/despesas"
                     android:textColor="@color/colorWhite"/>
 
             </LinearLayout>
@@ -71,6 +71,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:text="@string/proprietarios"
+                        android:onClick="proprietarios"
                         android:background="@drawable/button_background3"/>
                     <Button
                         android:layout_width="wrap_content"

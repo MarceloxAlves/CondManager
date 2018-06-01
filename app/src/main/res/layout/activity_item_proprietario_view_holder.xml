@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="150dp"
-    android:elevation="20dp"
-    app:cardBackgroundColor="@color/colorPrimary"
-    android:background="@drawable/button_background1"
-    tools:context=".app.ItemProprietarioViewHolderActivity">
+    android:elevation="4dp"
+    app:cardCornerRadius="4dp"
+    android:layout_marginBottom="5dp"
+    app:cardBackgroundColor="@color/colorPrimaryDark"
+    android:background="@drawable/button_background1">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -29,7 +30,7 @@
             android:layout_alignTop="@+id/proprietario_logo"
             android:layout_marginStart="125dp"
             android:text="Nome : Jesus abrahão"
-            android:textSize="20dp"
+            android:textSize="16sp"
             android:textColor="@color/colorWhite" />
 
         <TextView
@@ -40,7 +41,7 @@
             android:layout_centerVertical="true"
             android:text="Cpf : 203.564.789-56"
             android:textColor="@color/colorWhite"
-            android:textSize="20dp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/telefone_proprieario"
@@ -50,7 +51,7 @@
             android:layout_alignStart="@+id/nome_proprietario"
             android:text="fone : 99956-8956"
             android:textColor="@color/colorWhite"
-            android:textSize="20dp" />
+            android:textSize="16sp" />
 
 
     </RelativeLayout>

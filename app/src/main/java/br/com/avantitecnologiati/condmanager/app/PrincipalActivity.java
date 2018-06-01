@@ -20,10 +20,13 @@ public class PrincipalActivity extends AppCompatActivity {
         preferences = new Preferences(this);
         ((TextView)findViewById(R.id.emailLogado)).setText(preferences.getEmailUsuarioLogado());
 
-
     }
 
     public void apartamentos(View view) {
         startActivity(new Intent(this, ListarApartamentosActivity.class));
+    }
+
+    public void proprietarios(View view) {
+        startActivity(new Intent(this, ListarProprietariosActivity.class));
     }
 }

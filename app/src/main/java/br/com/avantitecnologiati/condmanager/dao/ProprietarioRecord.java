@@ -10,21 +10,20 @@ import java.util.List;
 import br.com.avantitecnologiati.condmanager.model.Proprietario;
 
 public class ProprietarioRecord  extends  Record{
-
-    private Database database;
+    private final String TAG = "Proprietario";
 
     public ProprietarioRecord(Database database) {
         super(database);
     }
 
 
-    public void adicionar(){
-
+    public void adicionar(Proprietario proprietario){
+        getDatabase().getDatabaseReference().child(TAG).child(String.valueOf(proprietario.getCpf())).setValue(proprietario);
     }
 
     public List<Proprietario> listar(){
         final List<Proprietario> registros = new ArrayList<>();
-        database.getDatabaseReference().child("Proprietario").addValueEventListener(new ValueEventListener() {
+        getDatabase().getDatabaseReference().child(TAG).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot ) {
                 for (DataSnapshot objSnapshot: dataSnapshot.getChildren()) {

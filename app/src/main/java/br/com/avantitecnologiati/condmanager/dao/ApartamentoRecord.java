@@ -15,7 +15,6 @@ import br.com.avantitecnologiati.condmanager.model.Apartamento;
 public class ApartamentoRecord extends Record {
 
     private final String TAG = "Apartamento";
-    private boolean logado;
     private Apartamento apartamento;
 
     public ApartamentoRecord(Database database) {
