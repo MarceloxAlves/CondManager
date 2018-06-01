@@ -8,6 +8,11 @@ public class Apartamento {
     private Ocupacao tipoOcupacao;
     private Proprietario proprietario;
 
+
+    public  Apartamento(){
+
+    }
+
     public Apartamento(int numero, int quantQuartos, Ocupacao tipoOcupacao, Proprietario proprietario) {
         this.numero = numero;
         this.quantQuartos = quantQuartos;

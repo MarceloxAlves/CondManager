@@ -9,13 +9,14 @@ import java.util.List;
 
 import br.com.avantitecnologiati.condmanager.model.Proprietario;
 
-public class ProprietarioRecord {
+public class ProprietarioRecord  extends  Record{
 
     private Database database;
 
     public ProprietarioRecord(Database database) {
-        this.database = database;
+        super(database);
     }
+
 
     public void adicionar(){
 

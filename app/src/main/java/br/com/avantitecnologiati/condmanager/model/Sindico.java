@@ -4,11 +4,17 @@ public class Sindico extends Pessoa implements Usuario {
 
     private String email, senha;
 
+    public Sindico(){
+        super(null,null);
+
+    }
     public Sindico(String nome, String cpf, String email, String senha) {
         super(nome, cpf);
         this.email = email;
         this.senha = senha;
     }
+
+
 
 
     @Override

@@ -1,4 +1,4 @@
-package br.com.avantitecnologiati.condmanager.model;
+package br.com.avantitecnologiati.condmanager.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -10,6 +10,7 @@ import android.widget.EditText;
 import java.util.List;
 
 import br.com.avantitecnologiati.condmanager.R;
+import br.com.avantitecnologiati.condmanager.model.Apartamento;
 
 public class ApartamentoAdapter extends RecyclerView.Adapter<ApartamentoAdapter.ApartamentoViewHolder> {
 
