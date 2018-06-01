@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:elevation="20dp"
+    app:cardBackgroundColor="@color/colorPrimary"
+    android:background="@drawable/button_background1"
+    tools:context=".app.ItemProprietarioViewHolderActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/proprietario_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/face" />
+
+        <TextView
+            android:id="@+id/nome_proprietario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/proprietario_logo"
+            android:layout_marginStart="125dp"
+            android:text="Nome : Jesus abrahão"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/cpf_proprietario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nome_proprietario"
+            android:layout_centerVertical="true"
+            android:text="Cpf : 203.564.789-56"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/telefone_proprieario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/proprietario_logo"
+            android:layout_alignStart="@+id/nome_proprietario"
+            android:text="fone : 99956-8956"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
