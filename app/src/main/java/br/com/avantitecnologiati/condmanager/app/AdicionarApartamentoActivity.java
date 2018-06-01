@@ -8,7 +8,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
-
 import br.com.avantitecnologiati.condmanager.R;
 import br.com.avantitecnologiati.condmanager.dao.ApartamentoRecord;
 import br.com.avantitecnologiati.condmanager.dao.Database;
