@@ -6,11 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.List;
 
 import br.com.avantitecnologiati.condmanager.R;
 import br.com.avantitecnologiati.condmanager.model.Apartamento;
+import br.com.avantitecnologiati.condmanager.model.Ocupacao;
 
 public class ApartamentoAdapter extends RecyclerView.Adapter<ApartamentoAdapter.ApartamentoViewHolder> {
 
@@ -35,8 +37,8 @@ public class ApartamentoAdapter extends RecyclerView.Adapter<ApartamentoAdapter.
     public void onBindViewHolder(ApartamentoViewHolder holder, int position) {
         Apartamento apartamento = this.apartamentoList.get(position);
         holder.numeroApartamento.setText("Numero : " + apartamento.getNumero());
-        holder.situacaoApartamento.setText("Situação : " + apartamento.getTipoOcupacao().toString());
-        holder.proprietarioApartamento.setText("Proprietario : " + apartamento.getProprietario().getNome());
+        holder.situacaoApartamento.setText("Situação : " + Ocupacao.values()[apartamento.getTipoOcupacao()]);
+        //holder.proprietarioApartamento.setText("Proprietario : " + apartamento.getProprietario().getNome());
     }
 
     @Override
@@ -45,7 +47,7 @@ public class ApartamentoAdapter extends RecyclerView.Adapter<ApartamentoAdapter.
     }
 
     public class ApartamentoViewHolder extends RecyclerView.ViewHolder{
-        private EditText numeroApartamento, situacaoApartamento, proprietarioApartamento;
+        private TextView numeroApartamento, situacaoApartamento, proprietarioApartamento;
         public ApartamentoViewHolder(View itemView) {
             super(itemView);
             numeroApartamento = itemView.findViewById(R.id.Numero_apartamento);

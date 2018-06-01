@@ -5,9 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="150dp"
-    android:elevation="20dp"
+    android:elevation="4dp"
+    android:layout_marginBottom="5dp"
     tools:context=".app.ItemApartamentoViewHolderActivity"
-    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardBackgroundColor="@color/colorPrimaryDark"
     android:background="@drawable/button_background1">
     <RelativeLayout
         android:layout_width="match_parent"

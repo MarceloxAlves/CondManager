@@ -32,8 +32,8 @@ public class ApartamentoRecord extends Record {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot ) {
                 for (DataSnapshot objSnapshot: dataSnapshot.getChildren()) {
-                    Apartamento Apartamento = objSnapshot.getValue(Apartamento.class);
-                    registros.add(Apartamento);
+                    Apartamento apartamento = objSnapshot.getValue(Apartamento.class);
+                    registros.add(apartamento);
                 }
             }
 

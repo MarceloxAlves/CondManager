@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorWhite"
     tools:context=".app.ListarApartamentosActivity">
 
     <android.support.v7.widget.RecyclerView
@@ -21,5 +21,5 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
         android:onClick="novoApartamento"
-        android:src="@mipmap/icon_add" />
+        android:src="@drawable/icon_add"/>
 </FrameLayout>
