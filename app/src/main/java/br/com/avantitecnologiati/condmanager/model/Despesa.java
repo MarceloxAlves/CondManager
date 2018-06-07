@@ -19,7 +19,6 @@ public class Despesa {
         this.idDespesa = idDespesa;
     }
 
-
     public int getTipoDespesa() {
         return tipoDespesa;
     }

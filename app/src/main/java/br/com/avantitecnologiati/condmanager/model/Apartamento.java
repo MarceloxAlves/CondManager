@@ -24,10 +24,6 @@ public class Apartamento {
         return numero;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
     public int getQuantQuartos() {
         return quantQuartos;
     }
@@ -44,21 +40,11 @@ public class Apartamento {
         this.tipoOcupacao = tipoOcupacao;
     }
 
-    public Proprietario getProprietario() {
-        return proprietario;
-    }
-
-    public void setProprietario(Proprietario proprietario) {
-        this.proprietario = proprietario;
-    }
-
     public double getValorCondominio(){
         double valor = 0;
 
         return valor;
-
     }
-
 
 
 }

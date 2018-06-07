@@ -17,4 +17,8 @@ public class Proprietario extends Pessoa {
     public List<Apartamento> getApartamentos() {
         return apartamentos;
     }
+
+    public void atribuirApartamentoProprietario(Apartamento apartamento) {
+        this.apartamentos.add(apartamento);
+    }
 }

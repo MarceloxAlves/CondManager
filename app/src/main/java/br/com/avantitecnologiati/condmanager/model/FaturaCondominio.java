@@ -10,7 +10,7 @@ public class FaturaCondominio {
     private Date dataVencimento;
     private List<ItemDespesa> itemDespesas;
     private String referencia;
-
-
+    private double valorTotalFatura;
+    private int status;
 
 }
