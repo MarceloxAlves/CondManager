@@ -7,10 +7,10 @@ public class ItemDespesa {
     private double valor;
     private Apartamento apartamento;
 
-    public ItemDespesa(Despesa despesa, Apartamento apartamento, int quantidadeQuartos) {
+    public ItemDespesa(Despesa despesa, Apartamento apartamento) {
         this.despesa = despesa;
         this.apartamento = apartamento;
-        setValorReal(quantidadeQuartos);
+        setValorReal(apartamento.getQuantQuartos());
     }
 
     private void setValorReal(int quantidadeQuartos) {

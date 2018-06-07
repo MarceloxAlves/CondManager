@@ -5,11 +5,11 @@ import java.util.List;
 public class Condominio {
     private int idCond;
     private String nomeCond;
-    private List<Apartamento> apartamentos;
+    private List<Apartamento> apartamentosCond;
 
     public Condominio(String nomeCond) {
         this.nomeCond = nomeCond;
-        this.apartamentos = new ArrayList<>();
+        this.apartamentosCond = new ArrayList<>();
     }
 
     public int getIdCond() {
@@ -28,29 +28,20 @@ public class Condominio {
         this.nomeCond = nomeCond;
     }
 
-
     public List<Apartamento> getApartamentos() {
-        return apartamentos;
+        return apartamentosCond;
     }
 
-    public void adicionarApartamento(Apartamento apartamento) {
-        this.apartamentos.add(apartamento);
+    public void adicionarApartamentoCondominio(Apartamento apartamento) {
+        this.apartamentosCond.add(apartamento);
     }
 
-
-    public int quantidadeQuartos(){
+    public int quantidadeQuartosCondominio(){
         int totalQuartos = 0;
         for (Apartamento apartamento:  getApartamentos()) {
             totalQuartos += apartamento.getQuantQuartos();
         }
         return totalQuartos;
     }
-
-
-
-    public void adicionarDespesaApartamento(){
-
-    }
-
 
 }
