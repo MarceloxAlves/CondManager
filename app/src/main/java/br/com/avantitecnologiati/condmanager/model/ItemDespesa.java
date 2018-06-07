@@ -1,5 +1,7 @@
 package br.com.avantitecnologiati.condmanager.model;
 
+import java.util.Date;
+
 public class ItemDespesa {
     private Despesa despesa;
     private double valor;
