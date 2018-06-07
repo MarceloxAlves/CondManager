@@ -47,27 +47,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/telefone" />
-                <EditText
-                    android:id="@+id/edit_rg"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/rg" />
 
                 <EditText
-                    android:id="@+id/edit_username"
+                    android:id="@+id/edit_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/username" />
+                    android:hint="@string/email" />
 
                 <EditText
-                    android:id="@+id/edit_passwoord"
+                    android:id="@+id/edit_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/password"
                     android:inputType="textPassword" />
 
                 <EditText
-                    android:id="@+id/edit_passwoord2"
+                    android:id="@+id/edit_confirm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/password"
@@ -76,13 +71,15 @@
         </android.support.v7.widget.CardView>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/cardCadastro"
             android:layout_below="@id/cardCadastro"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="80dp"
             android:background="@drawable/login_background"
             android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:onClick="cadastrar"
             android:text="@string/cadastrar" />
 
     </RelativeLayout>

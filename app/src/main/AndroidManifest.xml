@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".app.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,17 +20,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".app.LoginActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
             android:name=".app.CadastroActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".app.PrincipalActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".app.ListarApartamentosActivity" />
+        <activity
+            android:name=".app.ListarApartamentosActivity"
+            android:parentActivityName=".app.PrincipalActivity" />
         <activity android:name=".app.ItemApartamentoViewHolderActivity" />
-        <activity android:name=".app.AdicionarApartamentoActivity"></activity>
+        <activity
+            android:name=".app.AdicionarApartamentoActivity"
+            android:parentActivityName=".app.ListarApartamentosActivity" />
+        <activity
+            android:name=".app.ListarProprietariosActivity"
+            android:parentActivityName=".app.PrincipalActivity" />
+        <activity android:name=".app.ApartamentoDetalheActivity"></activity>
     </application>
 
 </manifest>
